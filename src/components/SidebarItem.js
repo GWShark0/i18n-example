@@ -4,7 +4,7 @@ import { FormattedMessage, defineMessages } from 'react-intl';
 
 import './SidebarItem.scss';
 
-export const messages = defineMessages({
+const messages = defineMessages({
   apple: 'Apple',
   kiwi: 'Kiwi',
   lemon: 'Lemon',
