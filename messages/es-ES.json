@@ -1,0 +1,11 @@
+{
+  "components.Search.placeholder": "Busca aquí",
+  "components.SidebarItem.apple": "Manzana",
+  "components.SidebarItem.kiwi": "Kiwi",
+  "components.SidebarItem.lemon": "Limón",
+  "components.SidebarItem.orange": "Naranja",
+  "components.SidebarItem.pear": "Pera",
+  "components.SidebarItem.strawberry": "Fresa",
+  "components.SidebarItem.watermelon": "Sandía",
+  "components.Toolbar.title": "Hola mundo"
+}
