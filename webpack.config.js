@@ -25,13 +25,16 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        include: [PATHS.src],
         use: [
           { loader: MiniCssExtractPlugin.loader },
           'css-loader',
           'postcss-loader',
           'sass-loader',
         ],
+      },
+      {
+        test: /\.(gif|png|jpg|jpeg|svg)$/,
+        use: { loader: 'url-loader' }
       },
     ],
   },

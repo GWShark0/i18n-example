@@ -1,5 +1,6 @@
 import React from 'react';
 import { FormattedMessage, defineMessages } from 'react-intl';
+import LanguageSelect from './LanguageSelect';
 import Search from './Search';
 
 import './Toolbar.scss';
@@ -14,7 +15,10 @@ function Toolbar() {
       <h1 className="toolbar__title">
         <FormattedMessage {...messages.title} />
       </h1>
-      <Search />
+      <div className="toolbar__content">
+        <Search />
+        <LanguageSelect />
+      </div>
     </nav>
   );
 }
