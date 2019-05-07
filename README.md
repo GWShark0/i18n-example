@@ -32,7 +32,7 @@ Translate generated files:
 ```
 npm run i18n:translate
 ```
-##### Requires a Google API key (see `.env` file)
+##### *Requires a Google API key (see `.env` file)
 
 https://cloud.google.com/docs/authentication/api-keys
 
