@@ -1,0 +1,9 @@
+.app {
+  display: grid;
+  grid-template-columns: 248px auto;
+  grid-template-rows: 60px auto;
+  grid-template-areas:
+    "toolbar toolbar"
+    "sidebar main";
+  height: 100%;
+}

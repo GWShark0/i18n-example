@@ -1,0 +1,10 @@
+{
+  "components.Search.placeholder": "Search here",
+  "components.SidebarItem.apple": "🍎 Apple",
+  "components.SidebarItem.kiwi": "🥝 Kiwi",
+  "components.SidebarItem.lemon": "🍋 Lemon",
+  "components.SidebarItem.orange": "🍊 Orange",
+  "components.SidebarItem.pear": "🍐 Pear",
+  "components.SidebarItem.strawberry": "🍓 Strawberry",
+  "components.SidebarItem.watermelon": "🍉 Watermelon"
+}

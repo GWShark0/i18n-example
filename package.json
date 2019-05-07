@@ -1,0 +1,35 @@
+{
+  "name": "i18n-example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "node app",
+    "build": "webpack --mode=development",
+    "i18n": "node ./scripts/extract-intl-messages.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.5.1",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-react-intl-auto": "^1.7.0",
+    "clean-webpack-plugin": "^2.0.2",
+    "css-loader": "^2.1.1",
+    "express": "^4.16.4",
+    "extract-react-intl-messages": "^1.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-intl": "^2.8.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.2"
+  }
+}
