@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= locale %>">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>i18n Example</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="main.css" rel="stylesheet">
+    <script>
+      window.appData = <%-JSON.stringify({ locale, messages }, null, 2)%>
+    </script>
   </head>
   <body>
     <div id="root"></div>
-  </body>
+    <script type="text/javascript" src="main.js"></script>
+</body>
 </html>

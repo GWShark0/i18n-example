@@ -14,10 +14,33 @@ export const messages = defineMessages({
   watermelon: 'Watermelon',
 });
 
+const getFruit = (id) => {
+  switch (id) {
+    case 'apple':
+      return '🍎';
+    case 'kiwi':
+      return '🥝';
+    case 'lemon':
+      return '🍋';
+    case 'orange':
+      return '🍊';
+    case 'pear':
+      return '🍐';
+    case 'strawberry':
+      return '🍓';
+    case 'watermelon':
+      return '🍉';
+    default:
+      return '❔';
+  }
+}
+
 function SidebarItem(props) {
   const { id } = props;
   return (
     <div className="sidebar-item">
+      {getFruit(id)}
+      {' '}
       <FormattedMessage {...messages[id]} />
     </div>
   );
