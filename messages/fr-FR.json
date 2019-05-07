@@ -6,5 +6,6 @@
   "components.SidebarItem.orange": "Orange",
   "components.SidebarItem.pear": "Poire",
   "components.SidebarItem.strawberry": "Fraise",
-  "components.SidebarItem.watermelon": "Pastèque"
+  "components.SidebarItem.watermelon": "Pastèque",
+  "components.Toolbar.title": "Bonjour le monde"
 }
