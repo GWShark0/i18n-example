@@ -25,7 +25,7 @@ npm start
 
 Generate files for translation:
 ```
-c:generate
+npm run i18n:generate
 ```
 
 Translate generated files:
@@ -35,6 +35,7 @@ npm run i18n:translate
 ##### Requires a Google API key (see `.env` file)
 
 https://cloud.google.com/docs/authentication/api-keys
+
 https://cloud.google.com/translate/docs
 
 Run both commands:
