@@ -15,5 +15,9 @@ pids
 *.seed
 *.pid.lock
 
+# dotenv environment variables file
+.env
+.env.test
+
 # Output directory
 dist/

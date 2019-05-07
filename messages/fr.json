@@ -1,10 +1,10 @@
 {
-  "components.Search.placeholder": "",
-  "components.SidebarItem.apple": "",
-  "components.SidebarItem.kiwi": "",
-  "components.SidebarItem.lemon": "",
-  "components.SidebarItem.orange": "",
-  "components.SidebarItem.pear": "",
-  "components.SidebarItem.strawberry": "",
-  "components.SidebarItem.watermelon": ""
+  "components.Search.placeholder": "Cherche ici",
+  "components.SidebarItem.apple": "Pomme",
+  "components.SidebarItem.kiwi": "Kiwi",
+  "components.SidebarItem.lemon": "Citron",
+  "components.SidebarItem.orange": "Orange",
+  "components.SidebarItem.pear": "Poire",
+  "components.SidebarItem.strawberry": "Fraise",
+  "components.SidebarItem.watermelon": "Pastèque"
 }
