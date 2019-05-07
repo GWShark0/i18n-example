@@ -6,8 +6,8 @@
     "prestart": "npm run build",
     "start": "node app",
     "build": "webpack --mode=development",
-    "i18n:generate": "node ./scripts/extract-intl-messages.js",
-    "i18n:translate": "node ./scripts/translate.js",
+    "i18n:generate": "node ./i18n/scripts/extract-intl-messages",
+    "i18n:translate": "node ./i18n/scripts/translate",
     "i18n": "run-s i18n:generate i18n:translate"
   },
   "dependencies": {

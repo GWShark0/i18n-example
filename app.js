@@ -5,7 +5,7 @@ const express = require('express');
 const glob = require('glob');
 const { PORT } = process.env;
 
-const translations = glob.sync('./messages/*.json')
+const translations = glob.sync('./i18n/messages/*.json')
   .map((filename) => [
     basename(filename, '.json'),
     readFileSync(filename, 'utf8'),

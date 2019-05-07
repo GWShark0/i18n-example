@@ -1,8 +1,8 @@
 const extractReactIntlMessages = require('extract-react-intl-messages');
+const locales = require('../locales');
 
-const locales = ['en-US', 'fr-FR'];
 const pattern = 'src/**/*.js';
-const buildDir = 'messages';
+const buildDir = 'i18n/messages';
 const defaultLocale = 'en-US';
 
 extractReactIntlMessages(locales, pattern, buildDir, { defaultLocale });

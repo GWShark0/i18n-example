@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { IntlProvider, addLocaleData } from 'react-intl';
-import en from 'react-intl/locale-data/en';
-import es from 'react-intl/locale-data/es';
-import fr from 'react-intl/locale-data/fr';
+import locales from '../i18n/locales';
+import getLanguage from '../i18n/scripts/getLanguage';
 import './index.scss';
 import App from './App';
 
-const { locale, messages } = window.appData;
+locales.forEach(locale => {
+  const language = getLanguage(locale);
+  addLocaleData(require(`react-intl/locale-data/${language}`));
+})
 
-addLocaleData([...en, ...es, ...fr]);
+const { locale, messages } = window.appData;
 
 ReactDOM.render(
   <IntlProvider locale={locale} messages={messages}>
