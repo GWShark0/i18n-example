@@ -1,9 +1,17 @@
-require('dotenv').config();
-const { readFileSync } = require('fs-extra');
-const { basename } = require('path');
 const express = require('express');
+const { readFileSync } = require('fs-extra');
 const glob = require('glob');
-const { PORT } = process.env;
+const helmet = require('helmet');
+const { basename, resolve } = require('path');
+
+const app = express();
+
+// add security-related headers to response
+app.use(helmet());
+
+// add templating engine
+app.set('view engine', 'ejs');
+app.set('views', resolve(__dirname, './views'));
 
 const translations = glob.sync('./i18n/messages/*.json')
   .map((filename) => [
@@ -16,10 +24,7 @@ const translations = glob.sync('./i18n/messages/*.json')
     return collection;
   }, {});
 
-const app = express();
-
-app.set('view engine', 'ejs');
-
+// index route
 app.get('/', (req, res) => {
   const { locale = 'en-US' } = req.query;
   const messages = translations[locale];
@@ -31,6 +36,4 @@ app.get('/', (req, res) => {
   res.render('index', { locale, messages });
 });
 
-app.use(express.static('dist'))
-
-app.listen(PORT, () => console.log(`Example running: http://localhost:${PORT}`));
+module.exports = app

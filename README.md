@@ -2,26 +2,14 @@
 
 ![app](https://user-images.githubusercontent.com/2968519/57331754-61147e00-70e7-11e9-9682-e11d2ef96565.png)
 
-## Install
-
-Create an environment file:
-```
-cp dev.env .env
-```
-Ensure the correct version of Node is installed:
-```
-nvm install
-```
-Install dependencies:
-```
-npm install
-```
+https://i18n-example.gwshark0.now.sh
 
 ## Run Demo
 
 ```
-npm start
+now dev
 ```
+##### *Requires [Now CLI](https://github.com/zeit/now-cli)
 
 ## Translate
 
