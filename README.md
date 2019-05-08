@@ -44,3 +44,62 @@ Run both commands:
 ```
 npm run i18n
 ```
+
+## Adding a new key/string pair:
+
+in [`src/components/SidebarItem.js`](src/components/SidebarItem.js)
+
+```diff
+ const messages = defineMessages({
+   pear: 'Pear',
+   strawberry: 'Strawberry',
+   watermelon: 'Watermelon',
++  grape: 'Grape',
+ });
+```
+```diff
+ const getFruit = (id) => {
+       return '🍓';
+     case 'watermelon':
+       return '🍉';
++    case 'grape':
++      return '🍇';
+     default:
+       return '❔';
+   }
+```
+
+in [`src/App.js`](src/App.js)
+
+```diff
+ function App() {
+         <SidebarItem id="pear" />
+         <SidebarItem id="strawberry" />
+         <SidebarItem id="watermelon" />
++        <SidebarItem id="grape" />
+       </Sidebar>
+       <Main />
+     </div>
+```
+
+Re-localize:
+```
+npm run i18n
+```
+
+## Adding another language
+
+in [`i18n/locales.js`](i18n/locales.js)
+```diff
+ module.exports = [
+   'en-US',
+   'fr-FR',
+   'es-MX',
++  'de-DE', // German
+ ];
+```
+
+Re-localize:
+```
+npm run i18n
+```
